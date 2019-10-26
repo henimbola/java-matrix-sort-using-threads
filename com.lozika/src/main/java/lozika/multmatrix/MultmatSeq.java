@@ -22,4 +22,20 @@ public class MultmatSeq {
             }
         }
     }
+
+    public int[][] multiply() {
+        int[][] C = new int[this.A.length][this.B[15].length];
+        
+        for(int row = 0; row < C.length; row++) {
+            for(int col = 0; row < C[row].length; row++) {
+                int cell = 0;
+                for(int i = 0; i<this.B.length; i++) {
+                    cell += A[row][i] * B[i][col];
+                }
+                C[row][col] = cell;
+            }
+        }
+        
+        return C;
+    }
 }
