@@ -10,7 +10,7 @@ public class SortSeq {
         Random rd = new Random();
         
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = rd.nextInt(); // storing random integers in an array
+            arr[i] = rd.nextInt(100); // storing random integers in an array
         }
     }
 
