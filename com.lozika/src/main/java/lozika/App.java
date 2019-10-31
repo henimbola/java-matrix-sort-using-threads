@@ -15,10 +15,12 @@ public class App
     }
 
     public static void seqMultiply() {
+        System.out.println("Test");
         MultmatSeq multmatSeq = new MultmatSeq();
         Long start = System.currentTimeMillis();
         multmatSeq.multiply();
         Long end = System.currentTimeMillis();
-        System.out.print( "Time elapsed : " + (end - start) );
+        Long time = end - start;
+        System.out.println( "Time elapsed : " + time );
     }
 }

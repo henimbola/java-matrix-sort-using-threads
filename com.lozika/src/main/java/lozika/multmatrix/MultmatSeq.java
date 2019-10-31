@@ -36,8 +36,15 @@ public class MultmatSeq {
     public int[][] multiply() {
 
         int[][] C = new int[this.A.length][this.B[0].length];
+        
+        for(int i=0; i<C.length; i++) {
+            for(int j = 0; j<C[i].length; j++) {
+                C[i][j] = 0;
+            }
+        }
     
         for(int row = 0; row < C.length; row++) {
+            System.out.println(C.length);
             for(int col = 0; row < C[row].length; row++) {
                 int cell = 0;
                 for(int i = 0; i<this.B.length; i++) {
